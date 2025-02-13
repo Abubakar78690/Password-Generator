@@ -1,0 +1,155 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Container for the password generator */
+  .container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .container:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Heading styling */
+  .title {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #333;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  /* Password input styling */
+  .password-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .password-display {
+    width: 75%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    background-color: #f9fafb;
+    color: #333;
+  }
+  
+  .password-display:focus {
+    outline: 2px solid #007bff;
+  }
+  
+  /* Copy button styling */
+  .copy-button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .copy-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Controls section */
+  .controls {
+    margin-top: 30px;
+  }
+  
+  /* Control group for sliders and checkboxes */
+  .control-group {
+    margin-bottom: 25px;
+  }
+  
+  /* Slider styling */
+  .slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    background: #007bff;
+    outline: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 2px solid #007bff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .slider::-webkit-slider-thumb:hover {
+    background: #0056b3;
+  }
+  
+  /* Label for the slider */
+  .slider-label {
+    font-weight: bold;
+    font-size: 15px;
+    color: #333;
+    margin-top: 5px;
+    display: block;
+  }
+  
+  /* Checkbox styling */
+  .checkbox {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  /* Label for checkboxes */
+  .checkbox-label {
+    font-size: 15px;
+    color: #555;
+    vertical-align: middle;
+  }
+  
+  /* Enhanced hover effects */
+  .control-group label:hover {
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  /* Transition effect for interactive elements */
+  input[type="checkbox"]:checked + .checkbox-label {
+    color: #007bff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 400px) {
+    .container {
+      width: 100%;
+      padding: 30px;
+    }
+  }
+  
